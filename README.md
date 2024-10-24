@@ -1,6 +1,6 @@
 # VALORANT Team Builder
 
-![VALORANT Team Builder](https://your-icon-url.com/icon.png)
+![VALORANT Team Builder](images/valo.png)
 
 **VALORANT Team Builder** is a powerful web-based application designed to help VALORANT players form balanced and strategic teams. By leveraging comprehensive player performance metrics, agent selections, organizational affiliations, and regional diversity, the app generates optimized team compositions tailored for various competitive scenarios. Integrated with OpenAI's GPT-4 and AWS Bedrock Agent Runtime, VALORANT Team Builder ensures that each team is not only balanced on paper but also tactically sound.
 
@@ -29,6 +29,8 @@
 - **Dockerized Deployment**: Easily deployable using Docker for consistency across environments.
 
 ## Demo
+
+<!-- ![VALORANT Team Builder Demo](images/app.png) -->
 
 ![VALORANT Team Builder Demo](https://your-demo-url.com/demo.gif)
 
