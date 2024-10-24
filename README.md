@@ -30,7 +30,7 @@
 
 ## Demo
 
-<!-- ![VALORANT Team Builder Demo](images/app.png) -->
+![VALORANT Team Builder Demo](images/app.png)
 
 ![VALORANT Team Builder Demo](https://your-demo-url.com/demo.gif)
 
