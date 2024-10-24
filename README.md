@@ -1,29 +1,52 @@
-# Agents for Amazon Bedrock Test UI
+# VALORANT Team Builder
 
-A generic Streamlit UI for testing generative AI agents built using Agents for Amazon Bedrock. For more information, refer to the blog post [Developing a Generic Streamlit UI to Test Amazon Bedrock Agents](https://blog.avangards.io/developing-a-generic-streamlit-ui-to-test-amazon-bedrock-agents).
+![VALORANT Team Builder](https://your-icon-url.com/icon.png)
 
-# Prequisites
+**VALORANT Team Builder** is a powerful web-based application designed to help VALORANT players form balanced and strategic teams. By leveraging comprehensive player performance metrics, agent selections, organizational affiliations, and regional diversity, the app generates optimized team compositions tailored for various competitive scenarios. Integrated with OpenAI's GPT-4 and AWS Bedrock Agent Runtime, VALORANT Team Builder ensures that each team is not only balanced on paper but also tactically sound.
 
-- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-- [Python 3](https://www.python.org/downloads/)
+## Table of Contents
 
-# Running Locally
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Database Setup](#database-setup)
+- [Environment Variables](#environment-variables)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-1. Run the following `pip` command to install the dependencies:
+## Features
 
-   ```
-   pip install -r requirements.txt
-   ```
+- **Team Submission Types**: Choose from Professional, Semi-Professional, Game Changers, Mixed-Gender, Cross-Regional, and Rising Star team submissions.
+- **Comprehensive Player Metrics**: Utilizes detailed player statistics to inform team composition.
+- **AI-Driven Team Composition**: Integrates with OpenAI's GPT-4 via AWS Bedrock to generate strategic team suggestions.
+- **Trace & Citation Transparency**: Provides detailed trace logs and citations for AI-generated content.
+- **Interactive Interface**: User-friendly and responsive design built with Streamlit.
+- **Session Management**: Maintains session state for seamless user experience.
+- **Dockerized Deployment**: Easily deployable using Docker for consistency across environments.
 
-2. Set the following environment variables:
-   - `BEDROCK_AGENT_ID` - The ID of the agent
-   - `BEDROCK_AGENT_ALIAS_ID` - The ID of the agent alias. The default `TSTALIASID` will be used if it is not set.
-   - The [AWS environment variables](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html) that provides the credentials to your account. The principal must have the necessary permissions to invoke the Bedrock agent.
-3. (Optional) Set the folliowing environment variables to customize the UI:
-   - `BEDROCK_AGENT_TEST_UI_TITLE` - The page title. The default `Agents for Amazon Bedrock Test UI` will used if it is not set.
-   - `BEDROCK_AGENT_TEST_UI_ICON` - The favicon, such as `:bar_chart:`. The default Streamlit icon will be used if it is not set.
-4. Run the following command to start the Streamlit app:
+## Demo
 
-   ```
-   streamlit run app.py --server.port=8080 --server.address=localhost
-   ```
+![VALORANT Team Builder Demo](https://your-demo-url.com/demo.gif)
+
+_Example screenshot showcasing the team submission form and generated team composition._
+
+## Installation
+
+Follow these steps to set up the VALORANT Team Builder on your local machine.
+
+### Prerequisites
+
+- [Python 3.8+](https://www.python.org/downloads/)
+- [pip](https://pip.pypa.io/en/stable/installation/)
+- [Docker](https://www.docker.com/get-started) _(Optional, for Docker deployment)_
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/valorant-team-builder.git
+cd valorant-team-builder
+```
